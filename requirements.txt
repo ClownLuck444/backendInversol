@@ -120,8 +120,6 @@ pytest==8.3.3
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-http-client==3.3.7
-pywin32==306
-pywin32-ctypes==0.2.3
 pyzmq==26.0.2
 reportlab==4.2.2
 requests==2.31.0
