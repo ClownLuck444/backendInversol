@@ -38,12 +38,6 @@ fonttools==4.51.0
 fsspec==2024.6.1
 future==1.0.0
 gast==0.5.4
-google-api-core==2.23.0
-google-auth==2.36.0
-google-auth-oauthlib==1.2.0
-google-cloud-pubsub==2.27.1
-google-pasta==0.2.0
-googleapis-common-protos==1.66.0
 greenlet==3.0.3
 grpc-google-iam-v1==0.13.1
 grpcio==1.68.0
@@ -102,7 +96,6 @@ platformdirs==4.2.0
 pluggy==1.5.0
 prompt-toolkit==3.0.43
 proto-plus==1.25.0
-protobuf==5.28.3
 psutil==5.9.8
 pure-eval==0.2.2
 pyasn1==0.6.0
