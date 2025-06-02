@@ -1,17 +1,14 @@
 import os
-from urllib.parse import quote_plus
 
 class Config:
-    DRIVER = "ODBC Driver 17 for SQL Server"
-    SERVER = "192.168.1.98"
-    DATABASE = "prueba"
-    USERNAME = "sa"
-    PASSWORD = "inversol2016"
+    # Leer las credenciales de PostgreSQL desde variables de entorno
+    SERVER = os.getenv("POSTGRES_SERVER", "localhost")  # Host de la base de datos
+    DATABASE = os.getenv("POSTGRES_DB", "inversol")  # Nombre de la base de datos
+    USERNAME = os.getenv("POSTGRES_USER", "sa")  # Usuario
+    PASSWORD = os.getenv("POSTGRES_PASSWORD", "password")  # Contraseña
+    PORT = os.getenv("POSTGRES_PORT", "5432")  # Puerto por defecto de PostgreSQL
 
-    DRIVER_ENCODED = quote_plus(DRIVER)
-    
     SQLALCHEMY_DATABASE_URI = (
-        f"mssql+pyodbc://{USERNAME}:{PASSWORD}@{SERVER}/{DATABASE}"
-        f"?driver={DRIVER_ENCODED}"
+        f"postgresql+psycopg2://{USERNAME}:{PASSWORD}@{SERVER}:{PORT}/{DATABASE}"
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
