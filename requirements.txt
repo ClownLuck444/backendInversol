@@ -39,9 +39,6 @@ fsspec==2024.6.1
 future==1.0.0
 gast==0.5.4
 greenlet==3.0.3
-grpc-google-iam-v1==0.13.1
-grpcio==1.68.0
-grpcio-status==1.68.0
 h11==0.14.0
 h5py==3.11.0
 idna==3.7
