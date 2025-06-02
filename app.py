@@ -30,9 +30,9 @@ app.register_blueprint(usuario_bp)
 app.register_blueprint(ubicacion_bp)
 app.register_blueprint(orden_bp)
 
-"""@app.before_request
+@app.before_request
 def create_tables():
-    db.create_all()"""
+    db.create_all()
 
 if __name__ == "__main__":
     socketio.run(app, host='0.0.0.0', port=10000)
