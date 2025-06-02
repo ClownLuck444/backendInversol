@@ -11,7 +11,6 @@ from socketio_instance import socketio  # Importa la instancia de socketio
 
 app = Flask(__name__)
 CORS(app,supports_credentials=True)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:8100", "http://192.168.1.190:8100"]}})
 
 app.config.from_object(Config)
 
